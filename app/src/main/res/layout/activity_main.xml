@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe6e6">
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getLocationBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <Button
+        android:drawableLeft="@drawable/ic_gps_fixed_indicator"
+        android:id="@+id/getLocationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ff4d4d"
+        android:padding="10dp"
+        android:textColor="#ffff"
+        android:text="@string/get_current_location" />
+</RelativeLayout>
